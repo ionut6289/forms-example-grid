@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="full">
+    <header>
+        <p>Register for</p>
+        <h1>Full Stack Conference</h1>
+    </header>
+
+    <main>
+        <p class="top">* - required field</p>
+
+        
+        <div class="first-main">
+            
+            <div class="name-email">
+            <p class="legend-description">Basic Info</p>
+
+            <div class="user">
+                <label for="name" class="user-label">Name:*</label>
+                <input type="text" name="user-name" class="user-text">
+            </div>
+
+            <div class="user">
+                <label for="email" class="user-label">Email Address:*</label>
+                <input type="email" name="user-email" class="user-text">
+            </div>
+            </div>
+
+            <div class="role-pc">
+                <div class="user">
+                <div class="role-label">
+                <label for="job-role" class="user-label">Job Role</label>
+                </div> 
+                <div class="roles">
+                <select name="role" class="role-select">
+                    <option value="">Select Job Role</option>
+                    <option value="front-end developer">Front-End Developer</option>
+                    <option value="back-end developer" >Back-End Developer</option>
+                    <option value="full-stack developer" >Full-Stack Developer</option>
+                </select>
+
+                <input type="text" name="other-role" class="user-text" placeholder="Other job role?">
+                </div>
+                </div> 
+            </div>
+            
+
+            <section class="t-shirt-info">
+            <p class="legend-description">T-Shirt Info</p>
+
+            <div class="t-shirt">
+                <label for="text" class="t-shirt-label">Size:</label>
+                <select name="sizes" class="select">
+                    <option value="">Select Size</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="extra-large">XL</option>
+                    <option value="extra-extra-large">XXL</option>
+                </select>
+            </div>
+
+            <div class="design">
+                <label for="text" class="t-shirt-label">Design:</label>
+                <select name="designs" class="select">
+                    <option value="">Select Theme</option>
+                    <option value="cool-t-shirt">Cool T-Shirt</option>
+                    <option value="gym-t-shirt">Gyn T-Shirt</option>
+                    <option value="fitted-t-shirt">Fitted T-Shirt</option>
+                </select>
+            </div>
+
+            <div class="color">
+                <label for="text" class="t-shirt-label">Color:</label>
+                <select name="colors" class="select">
+                    <option value="">Select a design theme above</option>
+                    <option value="red">Red</option>
+                    <option value="magenta">Magenta</option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+                
+            </div>
+            </section>
+        </div>
+
+        <section class="register-activities">
+            <p class="legend-description">Register for Activities *</p>
+            <article class="conference">
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-conference">
+                    <label for="main-conference">Main Conference</label>
+                    </div>
+                    <img src="logo/js.svg" alt="logo" class="logo">
+                    <p class="time"></p>
+                    <p class="price">$200</p>
+                </div>
+            </article>
+
+            <article class="js-libraries">
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-js-libraries">
+                    <label for="js-libraries"> JavaScript Libraries Workshop</label>
+                    </div>
+                    <img src="logo/react.svg" alt="logo" class="logo">
+                    <p class="time">Tuesday 9am-12pm</p>
+                    <p class="price">$100</p>
+                </div>
+            </article>
+
+            <article class="nude">
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-nude.js">
+                    <label for="nude.js"> Nude.js Workshop</label>
+                    </div>
+                    <img src="logo/node.svg" alt="logo" class="logo">
+                    <p class="time">Tuesday 1pm-4pm</p>
+                    <p class="price">$100</p>
+                </div>
+            </article>
+
+            <article class="js-frameworks">
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-js.frameworks">
+                    <label for="js.frameworks"> JavaScript Frameworks Workshop</label>
+                    </div>
+                    <img src="logo/angular.svg" alt="logo" class="logo">
+                    <p class="time">Tuesday 9am-12pm</p>
+                    <p class="price">$100</p>
+                </div>
+            </article>
+
+            <article class="build">
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-build.tools">
+                    <label for="build.tools"> Build tools Workshop</label>
+                    </div>
+                    <img src="logo/build.svg" alt="logo" class="logo">
+                    <p class="time"> Tuesday 1pm-4pm</p>
+                    <p class="price">$100</p>
+                </div>
+            </article>
+
+            <article class="npm">    
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-npm">
+                    <label for="npm"> npm Workshop</label>
+                    </div>
+                    <img src="logo/npm.svg" alt="logo" class="logo">
+                    <p class="time"> Tuesday 9am-12pm</p>
+                    <p class="price">$100</p>
+                </div>
+            </article>
+
+            <article class="express">
+                <div class="activities">
+                    <div class="check">
+                    <input type="checkbox" class="name-activity" name="check-express">
+                    <label for="express"> Express Workshop</label>
+                    </div>
+                    <img src="logo/express.svg" alt="logo" class="logo">
+                    <p class="time"> Tuesday 1pm-4pm</p>
+                    <p class="price">$100</p>
+                </div>
+
+            </article>
+            
+        </section>
+        <p class="total">Total: $0</p>
+    </main>
+
+    <footer class="payment-info">
+        <p class="legend-description">Payment Info</p>
+
+        <article class="pay-method">
+            <div class="user">
+            <label for="payment" class="user-label">I'm going to pay with:</label>
+            
+            <select name="pay" class="select">
+                <option value="">Select Payment Method</option>
+                <option value="card-banking">Card Banking</option>
+                <option value="PayPal" >PayPal</option>
+                <option value="mobile-pay" >Mobile-Pay</option>
+            </select>
+
+            </div> 
+        </article>  
+
+        <article class="ex-date">
+            <div class="user">
+            <label for="expiration" class="user-label">Expiration Date:</label>
+            
+            <select name="date" class="select">
+                <option value="">Select Year</option>
+                <option value="01">01</option>
+                <option value="02" >02</option>
+                <option value="03" >03</option>
+                <option value="04">04</option>
+                <option value="05" >05</option>
+                <option value="06" >06</option>
+                <option value="07" >07</option>
+                <option value="08" >08</option>
+                <option value="09" >09</option>
+                <option value="10" >10</option>
+                <option value="11" >11</option>
+                <option value="12" >12</option>
+                
+            </select>
+            </div>
+        </article>
+
+        <article class="ex-year">
+        <div class="user">
+            <label for="expiration" class="user-label">Expiration Year:</label>
+            
+            <select name="year" class="select">
+                <option value="">Select Year</option>
+                <option value="2022">2022</option>
+                <option value="2023" >2023</option>
+                <option value="2024" >2024</option>
+                <option value="2025">2025</option>
+                <option value="2026" >2026</option>
+                <option value="2027" >2027</option>
+            </select>
+        </div>
+        </article>
+
+        <article class="card-nr">
+        <div class="user">
+            <label for="number" class="user-label">Card Number: *</label>
+            <input type="text" class="user-text" name="card.number">
+        </div>
+        </article>
+
+        <article class="zip">
+        <div class="user">
+            <label for="number" class="user-label">Zip Code: *</label>
+            <input type="text" class="user-text" name="zip.code">
+        </div>
+        </article>
+        
+        <article class="cvv">
+        <div class="user">
+            <label for="number" class="user-label">CVV: *</label>
+            <input type="text" class="user-text" name="cvv-card">
+        </div>
+        </article>
+
+        <article class="paypal-info">
+        <div class="more-info">
+            <h2>PayPal</h2>
+            <p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click "Register" below.</p>
+        </div>
+        </article>
+
+        <article class="bitcoin-info">
+        <div class="more-info">
+            <h2>Bitcoin</h2>
+            <p>If you selected the Botcoin option we'll take you to the Coinbase site to set up your billing information.Due to the nature of exchanging .</p>
+        </div>
+        </article>
+
+        <button class="register">Register</button>
+
+    </footer>
+
+    </div>
+    
+</body>
+</html>
